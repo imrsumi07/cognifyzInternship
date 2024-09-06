@@ -1,0 +1,21 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+}
+
+.container {
+    margin-top: 20px;
+    background-color: rgb(17, 10, 24);
+    border-radius: 8px;
+    padding-top: 10px;
+}
+img{
+    width: inherit;
+    border-radius: 8px;
+}
+
+
+
+
+
