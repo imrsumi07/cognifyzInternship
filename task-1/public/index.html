@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | task 1</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Enter your Information</h1>
+    <form action="/submit" method="post" autocomplete="off">
+        <div class="content">
+        <label for="name">Name:</label>
+        <input placeholder="Name"  type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input placeholder="E-mail" type="email" id="email" name="email" required>
+        <br><br>
+        <label for="phoneno">Phone-No:</label>
+        <input placeholder="phoneno" type="text" id="phoneno" name="phoneno" required>
+        <br><br>
+        <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
