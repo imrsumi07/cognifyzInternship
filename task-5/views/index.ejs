@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+    <header class="text-black text-center py-3">
+        <h1>Register Here!</h1>
+    </header>
+
+
+    <main class="container my-4 text-white">
+        <h4 class="text-center">
+            If You Have Any Queries <button id="contactButton" class="btn text-white"
+                style="background-color: cadetblue;font-weight: 600;">Contact</button>
+        </h4>
+
+        <!-- Form to Add Item -->
+        <section class="row">
+            <div class="col-md-6 text-center">
+
+                <img src="/images/form.jpg" alt="form">
+                <h2>Remainder:</h2>
+                <p>Don't Forget Your Password!</p>
+            </div>
+
+            <div class="col-md-6">
+                <form id="addUserForm" autocomplete="off" class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                    <br>
+
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <br>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                    <br>
+
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" required>
+                    <br>
+
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" required>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Add User</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Form to Edit User -->
+    <section class="row">
+        <div class=" container col-md-6 text-white">
+            <div class="my-4">
+                <h2>Edit User</h2>
+                <form id="editUserForm" class="hidden form-group">
+                    <input type="hidden" id="editUserId">
+                    <label for="editName">Name</label>
+                    <input type="text" class="form-control" id="editName" required>
+                    <br>
+
+                    <label for="editEmail">Email</label>
+                    <input type="email" class="form-control" id="editEmail" required>
+                    <br>
+
+                    <label for="editPhone">Phone Number</label>
+                    <input type="tel" class="form-control" id="editPhone" required>
+                    <br>
+
+                    <label for="editPassword">Password</label>
+                    <input type="password" class="form-control" id="editPassword">
+                    <br>
+
+                    <label for="editConfirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="editConfirmPassword">
+                    <br>
+                    <button type="submit" class="btn btn-primary">Update User</button>
+                </form>
+            </div>
+        </div>
+        <!-- List of Users -->
+        <div class="col-md-5">
+            <h2>Users List</h2>
+            <ul id="usersList" class="list-group"></ul>
+        </div>
+        </div>
+    </section>
+    <br><br>
+    <footer class="contact-footer" id="contactFooter">
+        <div class="container text-center">
+            <p class="greeting">Hello! How can we assist you today?</p>
+            <p><strong>Email:</strong> <a href="mailto:contact@example.com">contact@example.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+12 34567890</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
