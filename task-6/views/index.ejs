@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="container text-light">
+        <h4 class="text-center">
+            If You Have Any Queries <button id="contactButton" class="btn text-white"
+                style="background-color: cadetblue;font-weight: 600;">Contact</button>
+        </h4>
+        <br><hr class="bg-light">
+        <br>
+        <section id="authSection" class="mb-4">
+            <header class="text-light">
+                <h2>Login!</h2>
+            </header>
+            <form id="loginForm" class="text-light">
+                <div class="form-group">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <div id="loginMessage" class="mt-2"></div>
+            </form>
+            <hr>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Name:</label>
+                    <input type="text" id="registerName" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email:</label>
+                    <input type="email" id="registerEmail" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" id="registerPassword" name="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+                <div id="registerMessage" class="mt-2"></div>
+
+                <br><br>
+            </form>
+            </div>
+            </div>
+        </section>
+
+        <section id="userSection" class="d-none">
+            <h2>Login Successfull!</h2>
+            <button id="logoutButton" class="btn btn-danger">Logout</button>
+        </section>
+    </main>
+    <br><br>
+    <footer class="contact-footer" id="contactFooter">
+        <div class="container text-center">
+            <p class="greeting">Hello! How can we assist you today?</p>
+            <p><strong>Email:</strong> <a href="mailto:contact@example.com">contact@example.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+12 34567890</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
